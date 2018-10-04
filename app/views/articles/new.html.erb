@@ -1,0 +1,7 @@
+<%= form_for @article, url: articles_path do |f| %>
+  <p>Title</p>
+  <%= f.text_field :title %>
+  <p>Content</p>
+  <%= f.text_area :content, size: "60x8" %>
+  <p><%= f.submit "Create" %></p>
+<% end %>
